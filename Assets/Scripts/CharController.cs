@@ -6,6 +6,8 @@ public class CharController : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 4f;
     Vector3 forward, right;
+    Rigidbody rb;
+
 
     // Start is called before the first frame update
     void Start()
@@ -14,6 +16,7 @@ public class CharController : MonoBehaviour
         forward.y = 0;
         forward = Vector3.Normalize(forward);
         right = Quaternion.Euler(new Vector3 (0, 90, 0)) * forward;
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -21,6 +24,7 @@ public class CharController : MonoBehaviour
     {
         if (Input.anyKey)
             Move();
+            //FlipChar();
     }
 
     void Move()
@@ -34,5 +38,19 @@ public class CharController : MonoBehaviour
         transform.forward = heading;
         transform.position += rightMovement;
         transform.position += upMovement;
-    }    
+    }
+
+    //void FlipChar()
+    //{
+    //    bool isFacingRight = rb.velocity.y >= 0;
+
+    //    if (isFacingRight)
+    //    {
+    //        transform.localScale = new Vector2(1f, transform.localScale.x);
+    //    }
+    //    if (!isFacingRight)
+    //    {
+    //        transform.localScale = new Vector2(-1f, transform.localScale.x);
+    //    }
+    //}
 }
