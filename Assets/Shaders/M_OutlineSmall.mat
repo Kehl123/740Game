@@ -23,7 +23,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_OutlineMaster
+  m_Name: M_OutlineSmall
   m_Shader: {fileID: -6465566751694194690, guid: 42f2e32a4eb26c44f91852f6851b1ae1,
     type: 3}
   m_ValidKeywords: []
@@ -203,7 +203,7 @@ Material:
     - _NormalScale: 1
     - _Number: 0
     - _OpaqueCullMode: 2
-    - _Outline_Thickness: 1.61
+    - _Outline_Thickness: 0.1
     - _PPDLodThreshold: 5
     - _PPDMaxSamples: 15
     - _PPDMinSamples: 5
