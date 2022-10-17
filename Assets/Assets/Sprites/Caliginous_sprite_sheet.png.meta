@@ -1,0 +1,431 @@
+fileFormatVersion: 2
+guid: 3c4a0ba68f3b14937b8280886acb1348
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Caliginous_sprite_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 1543
+        width: 144
+        height: 790
+      alignment: 9
+      pivot: {x: 0.22782983, y: 0.95641845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e831bb64e04e4ddd959b17080f19125
+      internalID: -83851778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caliginous_sprite_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 2263
+        width: 26
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bccc453b7cbe64cb599d7a29d33d85bf
+      internalID: 2042972004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caliginous_sprite_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 1536
+        width: 150
+        height: 777
+      alignment: 9
+      pivot: {x: 0.70474404, y: 0.9393513}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1eb9f9f24ceb479098ef786fe5a7d2b
+      internalID: -1585516369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caliginous_sprite_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 1732
+        width: 125
+        height: 587
+      alignment: 9
+      pivot: {x: 0.53135353, y: 0.92063475}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04775d38f7a784b4bb2ca93d5b2bcb41
+      internalID: 402142685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caliginous_sprite_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1888
+        width: 153
+        height: 214
+      alignment: 9
+      pivot: {x: 0.8586242, y: 0.15202887}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca59711681f494bf18088f59533bbad0
+      internalID: -627271836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caliginous_sprite_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 1959
+        width: 190
+        height: 135
+      alignment: 9
+      pivot: {x: 0.14932926, y: 0.645157}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5659306740b4dc9b6edafca833a794
+      internalID: 599799705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caliginous_sprite_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 1058
+        width: 171
+        height: 495
+      alignment: 9
+      pivot: {x: 0.5687577, y: 0.8800485}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a47b354703234489bf2dc44da65a16a
+      internalID: -1784437747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caliginous_sprite_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 994
+        width: 138
+        height: 556
+      alignment: 9
+      pivot: {x: 0.41479757, y: 0.95113677}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a104cff2cdf142d6817e394fcdca331
+      internalID: 1984732663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caliginous_sprite_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 71
+        width: 532
+        height: 763
+      alignment: 9
+      pivot: {x: 0.2126864, y: 0.047976032}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a9dcd2c513a4fa2b85c77a50c83c40
+      internalID: -1333907104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caliginous_sprite_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 87
+        width: 323
+        height: 541
+      alignment: 9
+      pivot: {x: 0.572803, y: 0.53622264}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e7a7f50786e34c958a271aea74f32d3
+      internalID: -749491152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caliginous_sprite_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 397
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c1675b5525a44296b7aa1ae21c6d2e6
+      internalID: -1066001535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caliginous_sprite_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 37
+        width: 146
+        height: 939
+      alignment: 9
+      pivot: {x: 0.63421965, y: 0.93408114}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b671344784bde4b7eacf0c6a413f9f28
+      internalID: 1972862917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caliginous_sprite_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 32
+        width: 153
+        height: 822
+      alignment: 9
+      pivot: {x: 0.6793117, y: 0.95772284}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe8a7d3569fc476b996daf7a3b42bf4
+      internalID: -970742198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caliginous_sprite_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 257
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf9ae512ac5a4bf9b3d584d1ebecbe9
+      internalID: -507668471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ff689ac5a40984876bc06626756db3b4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Caliginous_sprite_sheet_3: 402142685
+      Caliginous_sprite_sheet_2: -1585516369
+      Caliginous_sprite_sheet_11: 1972862917
+      Caliginous_sprite_sheet_8: -1333907104
+      Caliginous_sprite_sheet_0: -83851778
+      Caliginous_sprite_sheet_7: 1984732663
+      Caliginous_sprite_sheet_9: -749491152
+      Caliginous_sprite_sheet_5: 599799705
+      Caliginous_sprite_sheet_4: -627271836
+      Caliginous_sprite_sheet_13: -507668471
+      Caliginous_sprite_sheet_1: 2042972004
+      Caliginous_sprite_sheet_10: -1066001535
+      Caliginous_sprite_sheet_6: -1784437747
+      Caliginous_sprite_sheet_12: -970742198
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
