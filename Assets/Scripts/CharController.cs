@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.ShaderGraph;
 using UnityEngine;
 
 public class CharController : MonoBehaviour
@@ -7,11 +8,15 @@ public class CharController : MonoBehaviour
     [SerializeField] float moveSpeed = 4f;
     Vector3 forward, right;
     Rigidbody rb;
+    Animator animator;
+    [SerializeField] GameObject head;
+    
 
 
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();    
         forward = Camera.main.transform.forward;
         forward.y = 0;
         forward = Vector3.Normalize(forward);
@@ -22,35 +27,51 @@ public class CharController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.anyKey)
+        
             Move();
             //FlipChar();
     }
 
     void Move()
     {
-        Vector3 direction = new Vector3(Input.GetAxis("HorizontalKey"), 0, Input.GetAxis("VerticalKey"));
+        float hControl = Input.GetAxis("HorizontalKey");
+        float vControl = Input.GetAxis("VerticalKey");
+        Vector3 direction = new Vector3(hControl, 0, vControl);
         Vector3 rightMovement = right * moveSpeed * Time.deltaTime * Input.GetAxis("HorizontalKey");
         Vector3 upMovement = forward * moveSpeed * Time.deltaTime * Input.GetAxis("VerticalKey");
 
         Vector3 heading = Vector3.Normalize(rightMovement + upMovement);
-
+        
         transform.forward = heading;
         transform.position += rightMovement;
         transform.position += upMovement;
+        AnimationCheck(hControl, vControl); 
+        FlipChar(hControl);
+        
     }
 
-    //void FlipChar()
-    //{
-    //    bool isFacingRight = rb.velocity.y >= 0;
+    void AnimationCheck(float hControl, float vControl)
+    {
+        if (hControl != 0 || vControl != 0)
+        {
+            animator.SetBool("IsWalking", true);
+        }
+        else
+        {
+            animator.SetBool("IsWalking", false);
+        }
+    }
 
-    //    if (isFacingRight)
-    //    {
-    //        transform.localScale = new Vector2(1f, transform.localScale.x);
-    //    }
-    //    if (!isFacingRight)
-    //    {
-    //        transform.localScale = new Vector2(-1f, transform.localScale.x);
-    //    }
-    //}
+    void FlipChar(float hControl)
+    {
+        if(hControl < 0)
+        {
+            transform.localScale = new Vector2(-0.2f, transform.localScale.y);
+        }
+        else if(hControl > 0)
+        {
+            transform.localScale = new Vector2(0.2f, transform.localScale.y);
+        }
+    }
+    
 }
