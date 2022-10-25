@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class BillboardScript : MonoBehaviour
+
+public class StabScript : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -13,10 +14,5 @@ public class BillboardScript : MonoBehaviour
     void Update()
     {
         
-    }
-
-    void LateUpdate ()
-    {
-        transform.forward = Camera.main.transform.forward;        
     }
 }

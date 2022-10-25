@@ -32,6 +32,7 @@ public class CharController : MonoBehaviour
     {
         Move();
         CheckRunning();
+        CheckStab();
     }
 
     void Move()
@@ -49,8 +50,8 @@ public class CharController : MonoBehaviour
         transform.position += upMovement;
         AnimationCheck(hControl, vControl); 
         FlipChar(hControl);
-        
     }
+
     void CheckRunning()
     {
         if (Input.GetKey(KeyCode.LeftShift))
@@ -64,6 +65,20 @@ public class CharController : MonoBehaviour
             animator.SetBool("IsRunning", false);
         }
     }
+        void CheckStab()
+    {
+        if (Input.GetMouseButton(0))
+        {
+            animator.SetBool("Stab", true);
+        }
+        else
+        {
+            animator.SetBool("Stab", false);
+        }
+    }
+
+
+
     void AnimationCheck(float hControl, float vControl)
     {
         if (hControl != 0 || vControl != 0)
@@ -76,9 +91,7 @@ public class CharController : MonoBehaviour
             animator.SetBool("IsRunning", false);
         }
     }
-
- 
-
+    
 void FlipChar(float hControl)
     {
         if(hControl < 0)
