@@ -6,10 +6,13 @@ using UnityEngine;
 public class CharController : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 4f;
+    [SerializeField] float sprintSpeed = 2f;
+    float currentSpeed = 4f;
     Vector3 forward, right;
     Rigidbody rb;
     Animator animator;
-    [SerializeField] GameObject head;
+    //[SerializeField] GameObject head;
+    bool run;
     
 
 
@@ -27,9 +30,8 @@ public class CharController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-            Move();
-            //FlipChar();
+        Move();
+        CheckRunning();
     }
 
     void Move()
@@ -37,8 +39,8 @@ public class CharController : MonoBehaviour
         float hControl = Input.GetAxis("HorizontalKey");
         float vControl = Input.GetAxis("VerticalKey");
         Vector3 direction = new Vector3(hControl, 0, vControl);
-        Vector3 rightMovement = right * moveSpeed * Time.deltaTime * Input.GetAxis("HorizontalKey");
-        Vector3 upMovement = forward * moveSpeed * Time.deltaTime * Input.GetAxis("VerticalKey");
+        Vector3 rightMovement = right * currentSpeed * Time.deltaTime * Input.GetAxis("HorizontalKey");
+        Vector3 upMovement = forward * currentSpeed * Time.deltaTime * Input.GetAxis("VerticalKey");
 
         Vector3 heading = Vector3.Normalize(rightMovement + upMovement);
         
@@ -49,7 +51,19 @@ public class CharController : MonoBehaviour
         FlipChar(hControl);
         
     }
-
+    void CheckRunning()
+    {
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            currentSpeed = moveSpeed * sprintSpeed;
+            animator.SetBool("IsRunning", true);
+        }
+        else
+        {
+            currentSpeed = moveSpeed;
+            animator.SetBool("IsRunning", false);
+        }
+    }
     void AnimationCheck(float hControl, float vControl)
     {
         if (hControl != 0 || vControl != 0)
@@ -59,10 +73,13 @@ public class CharController : MonoBehaviour
         else
         {
             animator.SetBool("IsWalking", false);
+            animator.SetBool("IsRunning", false);
         }
     }
 
-    void FlipChar(float hControl)
+ 
+
+void FlipChar(float hControl)
     {
         if(hControl < 0)
         {
