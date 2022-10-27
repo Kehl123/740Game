@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FireScrip : MonoBehaviour
 {
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +19,7 @@ public class FireScrip : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.tag == "Player"); //Getting an error here?
+        if (collision.tag == "Player") //Getting an error here?
         {
             FindObjectOfType<GameManagement>().PickUpFire();
             Destroy(gameObject);

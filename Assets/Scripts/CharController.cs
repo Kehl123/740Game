@@ -6,8 +6,9 @@ using UnityEngine;
 public class CharController : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 4f;
-    [SerializeField] float sprintSpeed = 2f;
-    float currentSpeed = 4f;
+    [SerializeField] float sprintSpeed = 8f;
+    [SerializeField] float creepSpeed = 2f;
+    [SerializeField] float currentSpeed = 4f;
     Vector3 forward, right;
     Rigidbody rb;
     Animator animator;
@@ -32,7 +33,9 @@ public class CharController : MonoBehaviour
     {
         Move();
         CheckRunning();
+        CheckCreep();
         CheckStab();
+        CheckPoke();
     }
 
     void Move()
@@ -54,9 +57,9 @@ public class CharController : MonoBehaviour
 
     void CheckRunning()
     {
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftShift)) //not increasing speed NEED AN ELSE IF OR SOMETHING I THINK HERE
         {
-            currentSpeed = moveSpeed * sprintSpeed;
+            currentSpeed =  sprintSpeed;
             animator.SetBool("IsRunning", true);
         }
         else
@@ -65,7 +68,20 @@ public class CharController : MonoBehaviour
             animator.SetBool("IsRunning", false);
         }
     }
-        void CheckStab()
+    void CheckCreep() //always going into creep when shouldnt be 
+    {
+        if (Input.GetKey(KeyCode.LeftControl))
+        {
+            currentSpeed =  creepSpeed;
+            animator.SetBool("IsCreeping", true);
+        }
+        else
+        {
+            currentSpeed = moveSpeed;
+            animator.SetBool("IsCreeping", false);
+        }
+    }
+    void CheckStab()
     {
         if (Input.GetMouseButton(0))
         {
@@ -76,8 +92,17 @@ public class CharController : MonoBehaviour
             animator.SetBool("Stab", false);
         }
     }
-
-
+    void CheckPoke()
+    {
+        if (Input.GetMouseButton(1))
+       {
+            animator.SetBool("Poke", true);
+        }
+       else
+        {
+            animator.SetBool("Poke", false);
+        }
+    }
 
     void AnimationCheck(float hControl, float vControl)
     {
@@ -89,6 +114,7 @@ public class CharController : MonoBehaviour
         {
             animator.SetBool("IsWalking", false);
             animator.SetBool("IsRunning", false);
+            animator.SetBool("IsCreeping", false);
         }
     }
     
