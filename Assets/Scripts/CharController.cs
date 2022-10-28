@@ -8,6 +8,7 @@ public class CharController : MonoBehaviour
     [SerializeField] float moveSpeed = 4f;
     [SerializeField] float sprintSpeed = 8f;
     [SerializeField] float creepSpeed = 2f;
+    [SerializeField] float chargeSpeed = 12f;
     [SerializeField] float currentSpeed = 4f;
     Vector3 forward, right;
     Rigidbody rb;
@@ -32,8 +33,7 @@ public class CharController : MonoBehaviour
     void Update()
     {
         Move();
-        CheckRunning();
-        CheckCreep();
+        CheckMovement();
         CheckStab();
         CheckPoke();
     }
@@ -55,32 +55,33 @@ public class CharController : MonoBehaviour
         FlipChar(hControl);
     }
 
-    void CheckRunning()
+    void CheckMovement()
     {
-        if (Input.GetKey(KeyCode.LeftShift)) //not increasing speed NEED AN ELSE IF OR SOMETHING I THINK HERE
+        if (Input.GetKey(KeyCode.LeftShift & KeyCode.Space))
+        {
+                currentSpeed = chargeSpeed;
+                animator.SetBool("IsCharging", true);
+        }
+        else if
+            (Input.GetKey(KeyCode.LeftShift))
         {
             currentSpeed =  sprintSpeed;
             animator.SetBool("IsRunning", true);
         }
-        else
+        else if (Input.GetKey(KeyCode.LeftControl))
         {
-            currentSpeed = moveSpeed;
-            animator.SetBool("IsRunning", false);
-        }
-    }
-    void CheckCreep() //always going into creep when shouldnt be 
-    {
-        if (Input.GetKey(KeyCode.LeftControl))
-        {
-            currentSpeed =  creepSpeed;
+            currentSpeed = creepSpeed;
             animator.SetBool("IsCreeping", true);
         }
         else
         {
             currentSpeed = moveSpeed;
+            animator.SetBool("IsRunning", false);
             animator.SetBool("IsCreeping", false);
+            animator.SetBool("IsCharging", false);
         }
     }
+
     void CheckStab()
     {
         if (Input.GetMouseButton(0))
