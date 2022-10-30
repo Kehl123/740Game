@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-3149495900345947981
+--- !u!114 &-681206076931482810
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -23,7 +23,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_OutlineLarge
+  m_Name: Shader Graphs_BlackOutline 2
   m_Shader: {fileID: -6465566751694194690, guid: 42f2e32a4eb26c44f91852f6851b1ae1,
     type: 3}
   m_ValidKeywords: []
@@ -74,7 +74,7 @@ Material:
     - _EnableBlendModePreserveSpecularLighting: 0
     - _EnableFogOnTransparent: 1
     - _OpaqueCullMode: 2
-    - _Outline_Thickness: 1.24
+    - _Outline_Thickness: 0.3
     - _RenderQueueType: 1
     - _SrcBlend: 1
     - _StencilRef: 0
