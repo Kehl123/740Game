@@ -1,0 +1,365 @@
+fileFormatVersion: 2
+guid: 57e8c6ac5dd5c41e98e93154f09eeebf
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dunderhead_1_0
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 1032
+        width: 486
+        height: 565
+      alignment: 9
+      pivot: {x: 0.50710875, y: 0.43885183}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b32d71800f374c50b99ec3ff266eb04
+      internalID: 1666994747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dunderhead_1_1
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 869
+        width: 456
+        height: 510
+      alignment: 9
+      pivot: {x: 0.5, y: 0.052900247}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f83e71ec4b98642c880024e3f2b8e84f
+      internalID: -1867130232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dunderhead_1_2
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 1002
+        width: 433
+        height: 600
+      alignment: 9
+      pivot: {x: 0.5319153, y: 0.52303225}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a059c3e285144bcbf1da88dd288232
+      internalID: 1435467751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dunderhead_1_3
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 818
+        width: 377
+        height: 549
+      alignment: 9
+      pivot: {x: 0.5366561, y: 0.06578234}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 484a07a76b2c441cfa369e58aa9a1fbe
+      internalID: -1594738917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dunderhead_1_4
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 578
+        width: 246
+        height: 364
+      alignment: 9
+      pivot: {x: 0.16294035, y: 0.8986377}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebfa593bc05e642fe92f00a7d696f4a5
+      internalID: -344329375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dunderhead_1_5
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 586
+        width: 229
+        height: 370
+      alignment: 9
+      pivot: {x: 0.30387247, y: 0.9201858}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f6be4173ad9641e9bb7d41e12a19f88
+      internalID: 139007402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dunderhead_1_6
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 125
+        width: 245
+        height: 365
+      alignment: 9
+      pivot: {x: 0.83843535, y: 0.8786146}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4090f00a9971f4ff885e3166c49841b3
+      internalID: -1369883391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dunderhead_1_7
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 335
+        width: 171
+        height: 156
+      alignment: 9
+      pivot: {x: 0.5404074, y: 0.8100508}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c77a2f456c440c7b12c7a76d813eff
+      internalID: 577134601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dunderhead_1_8
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 340
+        width: 171
+        height: 156
+      alignment: 9
+      pivot: {x: 0.39898002, y: 0.81005156}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da83ea0fac8f647e3bd9c34c131a4fc5
+      internalID: -1133041995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dunderhead_1_9
+      rect:
+        serializedVersion: 2
+        x: 1927
+        y: 390
+        width: 178
+        height: 149
+      alignment: 9
+      pivot: {x: 0.36413437, y: 0.77824414}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c16630f6fad2d445fa70f54b86bac937
+      internalID: -1662555072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dunderhead_1_10
+      rect:
+        serializedVersion: 2
+        x: 2142
+        y: 390
+        width: 178
+        height: 149
+      alignment: 9
+      pivot: {x: 0.40295273, y: 0.77824414}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a9d3a3a07a043c6a37b24a8d737a6a
+      internalID: -32907428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 9ba22fa65762a489b8ff307753a83922
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Dunderhead_1_4: -344329375
+      Dunderhead_1_9: -1662555072
+      Dunderhead_1_0: 1666994747
+      Dunderhead_1_10: -32907428
+      Dunderhead_1_6: -1369883391
+      Dunderhead_1_2: 1435467751
+      Dunderhead_1_5: 139007402
+      Dunderhead_1_8: -1133041995
+      Dunderhead_1_1: -1867130232
+      Dunderhead_1_3: -1594738917
+      Dunderhead_1_7: 577134601
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
