@@ -30,7 +30,6 @@ public class AIMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Move();
     }
 
     private void LateUpdate()
@@ -51,37 +50,18 @@ public class AIMovement : MonoBehaviour
         }
 
         transform.Translate(0, 0, currentSpeed * Time.deltaTime);
-    }
-
-    void Move()
-    {
-       float hControl = Input.GetAxis("HorizontalKey");
-       float vControl = Input.GetAxis("VerticalKey");
-        //Vector3 direction = new Vector3(hControl, 0, vControl);
-        //Vector3 rightMovement = right * currentSpeed * Time.deltaTime * Input.GetAxis("HorizontalKey");
-        //Vector3 upMovement = forward * currentSpeed * Time.deltaTime * Input.GetAxis("VerticalKey");
-
-        //Vector3 heading = Vector3.Normalize(rightMovement + upMovement);
-
-        //transform.forward = heading;
-        //transform.position += rightMovement;
-        //transform.position += upMovement;
-       AnimationCheck(hControl, vControl);
-       FlipChar(hControl);
-    }
-
-    void AnimationCheck(float hControl, float vControl)
-    {
-        if (hControl != 0 || vControl != 0)
+        if(direction.magnitude > 0)
         {
             animator.SetBool("Moving", true);
+            Debug.Log("SICK");
         }
         else
         {
             animator.SetBool("Moving", false);
-
+            Debug.Log("NOT SICK");
         }
     }
+        
     void FlipChar(float hControl)
     {
         if (hControl < 0)
