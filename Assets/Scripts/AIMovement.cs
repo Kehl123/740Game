@@ -62,15 +62,15 @@ public class AIMovement : MonoBehaviour
         }
     }
         
-    void FlipChar(float hControl)
-    {
-        if (hControl < 0)
-        {
-            transform.localScale = new Vector2(1f, transform.localScale.y);
-        }
-        else if (hControl > 0)
-        {
-            transform.localScale = new Vector2(1f, transform.localScale.y);
-        }
-    }
+    //void FlipChar(float hControl)
+    //{
+    //    if (hControl < 0)
+    //    {
+    //        transform.localScale = new Vector2(1f, transform.localScale.y);
+    //    }
+    //    else if (hControl > 0)
+    //    {
+    //        transform.localScale = new Vector2(1f, transform.localScale.y);
+    //    }
+    //}
 }
