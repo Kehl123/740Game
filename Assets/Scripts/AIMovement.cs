@@ -18,7 +18,7 @@ public class AIMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        waypoints = GameObject.FindGameObjectsWithTag("Waypoint");
+        //waypoints = GameObject.FindGameObjectsWithTag("Waypoint");
         animator = GetComponent<Animator>();
         forward = Camera.main.transform.forward;
         forward.y = 0;
@@ -48,7 +48,7 @@ public class AIMovement : MonoBehaviour
                 currentWaypoint = 0;
             }
         }
-
+    
         transform.Translate(0, 0, currentSpeed * Time.deltaTime);
         if(direction.magnitude > 0)
         {
