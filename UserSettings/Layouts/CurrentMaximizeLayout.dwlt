@@ -87,7 +87,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -188,8 +188,8 @@ MonoBehaviour:
     y: 0
     width: 342
     height: 757
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -227,9 +227,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: d0a40000
-      m_LastClickedID: 42192
-      m_ExpandedIDs: a027ffffb227ffffc227ffff922afffff02dfffff096ffff62e4ffffc0faffff9073000068770000f87e00004a7f00005ca20000a2a20000
+      m_SelectedIDs: 78750000
+      m_LastClickedID: 30072
+      m_ExpandedIDs: 1afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -272,8 +272,8 @@ MonoBehaviour:
     y: 0
     width: 633
     height: 757
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 2}
@@ -617,7 +617,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.21409585, y: -0.68578357, z: 0.22312385, w: -0.6587816}
     speed: 2
-    m_Value: {x: -0.2141051, y: -0.6858132, z: 0.22313349, w: -0.6588101}
+    m_Value: {x: 0.21409586, y: 0.68578357, z: -0.22312385, w: 0.6587816}
   m_Size:
     m_Target: 1.2023522
     speed: 2
@@ -1380,22 +1380,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Levels
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Levels
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\adam_\Desktop\Schadenfreude\740Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: fa7d0000
-    m_LastClickedID: 32250
-    m_ExpandedIDs: 000000006c7c000000ca9a3bffffff7f
+    m_SelectedIDs: f27b0000
+    m_LastClickedID: 31730
+    m_ExpandedIDs: 00000000f27b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1423,7 +1423,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006c7c000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000f27b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1448,8 +1448,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: d0a40000
-    m_LastClickedInstanceID: 42192
+    m_SelectedInstanceIDs: 78750000
+    m_LastClickedInstanceID: 30072
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000000000004e760000a87a0000d07a000006750000f47c0000b27d0000207a0000
     m_RenameOverlay:
@@ -1539,7 +1539,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -55380
+  m_LastSelectedObjectID: 42192
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1559,8 +1559,8 @@ MonoBehaviour:
     y: 0
     width: 262
     height: 987
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
